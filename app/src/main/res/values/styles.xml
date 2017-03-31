@@ -1,0 +1,69 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FragmentNo">  <!-- Numbering the clips -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Answer">  <!-- Checkbox/Radiobutton text -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/activity_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/activity_pad_marg</item>
+    </style>
+
+    <style name="Answer.Typed">  <!-- EditText field -->
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:minLines">4</item>
+        <item name="android:maxLines">6</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:hint">@string/hint</item>
+    </style>
+
+    <style name="QuestCard">  <!-- stlye for each question card -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/activity_pad_marg</item>
+        <item name="android:padding">@dimen/activity_pad_marg</item>
+        <item name="android:textSize">@dimen/activity_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="QuestCard.Instruction"> <!-- Instruction text for following questions -->
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="PlayButton"> <!-- To play back the music clip -->
+        <item name="android:layout_width">@dimen/image_size</item>
+        <item name="android:layout_height">@dimen/image_size</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/initiate_music</item>
+        <item name="android:layout_marginTop">@dimen/activity_pad_marg</item>
+        <item name="android:layout_marginLeft">@dimen/activity_pad_marg</item>
+        <item name="android:layout_marginRight">@dimen/activity_pad_marg</item>
+        <item name="android:textSize">@dimen/activity_text_size</item>
+    </style>
+
+    <style name="ViewHolder"> <!--container for views-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>

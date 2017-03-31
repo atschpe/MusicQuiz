@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.android.musicquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/QuestCard.Instruction"
+            android:text="@string/instruction1"
+            android:textStyle="italic" />
+
+        <LinearLayout style="@style/QuestCard">
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <TextView
+                    style="@style/FragmentNo"
+                    android:text="@string/no1" />
+
+                <ImageButton
+                    android:id="@+id/play1"
+                    style="@style/PlayButton" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <CheckBox
+                    style="@style/Answer"
+                    android:text="@string/q1op1" />
+
+                <CheckBox
+                    android:id="@+id/correct1a"
+                    style="@style/Answer"
+                    android:text="@string/q1op2" />
+
+                <CheckBox
+                    android:id="@+id/correct1b"
+                    style="@style/Answer"
+                    android:text="@string/q1op3" />
+
+                <CheckBox
+                    style="@style/Answer"
+                    android:text="@string/q1op4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/QuestCard"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <TextView
+                    style="@style/FragmentNo"
+                    android:text="@string/no2" />
+
+                <ImageButton
+                    android:id="@+id/play2"
+                    style="@style/PlayButton" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <CheckBox
+                    android:id="@+id/correct2a"
+                    style="@style/Answer"
+                    android:text="@string/q2op1" />
+
+                <CheckBox
+                    style="@style/Answer"
+                    android:text="@string/q2op2" />
+
+                <CheckBox
+                    style="@style/Answer"
+                    android:text="@string/q2op3" />
+
+                <CheckBox
+                    android:id="@+id/correct2b"
+                    style="@style/Answer"
+                    android:text="@string/q2op4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestCard.Instruction"
+            android:text="@string/instruction2"
+            android:textStyle="italic" />
+
+        <LinearLayout style="@style/QuestCard">
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <TextView
+                    style="@style/FragmentNo"
+                    android:text="@string/no3" />
+
+                <ImageButton
+                    android:id="@+id/play3"
+                    style="@style/PlayButton" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/response3"
+                style="@style/Answer.Typed" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/QuestCard">
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <TextView
+                    style="@style/FragmentNo"
+                    android:text="@string/no4" />
+
+                <ImageButton
+                    android:id="@+id/play4"
+                    style="@style/PlayButton" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/response4"
+                style="@style/Answer.Typed" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestCard.Instruction"
+            android:text="@string/instruction3"
+            android:textStyle="italic" />
+
+        <LinearLayout style="@style/QuestCard">
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <TextView
+                    style="@style/FragmentNo"
+                    android:text="@string/no5" />
+
+                <ImageButton
+                    android:id="@+id/play5"
+                    style="@style/PlayButton" />
+            </LinearLayout>
+
+            <RadioGroup style="@style/ViewHolder">
+
+                <RadioButton
+                    android:id="@+id/correct5"
+                    style="@style/Answer"
+                    android:text="@string/q5op1" />
+
+                <RadioButton
+                    style="@style/Answer"
+                    android:text="@string/q5op2" />
+
+                <RadioButton
+
+                    style="@style/Answer"
+                    android:text="@string/q5op3" />
+
+                <RadioButton
+                    style="@style/Answer"
+                    android:text="@string/q5op4" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout style="@style/QuestCard">
+
+            <LinearLayout style="@style/ViewHolder">
+
+                <TextView
+                    style="@style/FragmentNo"
+                    android:text="@string/no6" />
+
+                <ImageButton
+                    android:id="@+id/play6"
+                    style="@style/PlayButton" />
+            </LinearLayout>
+
+            <RadioGroup style="@style/ViewHolder">
+
+                <RadioButton
+                    style="@style/Answer"
+                    android:text="@string/q6op1" />
+
+                <RadioButton
+                    android:id="@+id/correct6"
+                    style="@style/Answer"
+                    android:text="@string/q6op2" />
+
+                <RadioButton
+                    style="@style/Answer"
+                    android:text="@string/q6op3" />
+
+                <RadioButton
+                    style="@style/Answer"
+                    android:text="@string/q6op4" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="submit"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Music Quiz</string>
+
+    <!--strings for the quiz. -->
+    <string name="instruction1">A composer used another\'s work as foundation for his work.
+        Name both composers.</string>
+    <string name="no1">Play 1st Clip</string>
+    <string name="q1op1">Georg Philipp Telemann</string>
+    <string name="q1op2">Johann Sebastian Bach</string> <!--correct answer-->
+    <string name="q1op3">Charles Gounod</string> <!--correct answer-->
+    <string name="q1op4">Franz Schubert</string>
+
+    <string name="no2">Play 2nd Clip</string>
+    <string name="q2op1">Benjamin Britten</string> <!--correct answer-->
+    <string name="q2op2">Edward Elgar</string>
+    <string name="q2op3">Georg Friedrich Händel</string>
+    <string name="q2op4">Henry Purcell</string> <!--correct answer-->
+
+    <string name="instruction2">Name the well known source these pieces are based on.</string>
+    <string name="no3">Play 3rd Clip</string> <!-- Goethe's Poem "The Sorcerer's Apprentice" -->
+    <string name="no4">Play 4th Clip</string> <!-- Folksong /round "Brother Jacob" -->
+    <string name="hint">Type your answer here</string>
+
+    <string name="instruction3">Who wrote these pieces?</string>
+    <string name="no5">Play 5th Clip</string>
+    <string name="q5op1">Antonio Vivaldi</string> <!--correct answer-->
+    <string name="q5op2">Niccolò Paganini</string>
+    <string name="q5op3">Wolfgang Amadeus Mozart</string>
+    <string name="q5op4">Franz Liszt</string>
+
+    <string name="no6">Play 6th Clip</string>
+    <string name="q6op1">Wolfgang Amadeus Mozart</string>
+    <string name="q6op2">Sergei Prokofiev</string> <!--correct answer-->
+    <string name="q6op3">Joseph Haydn</string>
+    <string name="q6op4">Ottorino Respighi</string>
+
+    <string name="submit">Submit</string>
+
+    <!--strings to look for in answers for questions 3 & 4 -->
+    <string name="answer3_goethe">goethe</string>
+    <string name="answer3_poem">poem</string>
+    <string name="answer3_apprentice">apprentice</string>
+    <string name="answer3_sorcerer">sorcerer</string>
+    <string name="answer4_folksong">folksong</string>
+    <string name="answer4_round">round</string>
+    <string name="answer4_brother">brother</string>
+    <string name="answer4_jacob">jacob</string>
+
+    <!-- toast parts for concatenation -->
+    <string name="toast_part1">You have</string>
+    <string name="taost_part2">correct answers.</string>
+
+</resources>
