@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
         if (correctAnswer1a && correctAnswer1b) {
             score += 1;
         }
+
         CheckBox correct2a = (CheckBox) findViewById(R.id.correct2a);
         boolean correctAnswer2a = correct2a.isChecked();
         CheckBox correct2b = (CheckBox) findViewById(R.id.correct2b);
@@ -143,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
         if (correctAnswer2a && correctAnswer2b) {
             score += 1;
         }
+
         //Determine whether certain words have been provided in the answer (question 3 & 4)
         //One or more of these keywords should be in the answer provided.
         EditText response3 = (EditText) findViewById(R.id.response3);
@@ -153,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 writ3.contains(getString(R.string.answer3_sorcerer))) {
             score += 1;
         }
+
         EditText response4 = (EditText) findViewById(R.id.response4);
         String writ4 = response4.getText().toString().toLowerCase();
         if (writ4.contains(getString(R.string.answer4_folksong)) ||
@@ -161,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
                 writ4.contains(getString(R.string.answer4_jacob))) {
             score += 1;
         }
+
         //Determine whether correct answer has been selected (question 5 & 6)
         RadioButton correct5 = (RadioButton) findViewById(R.id.correct5);
         boolean correctAnswer5 = correct5.isChecked();
@@ -171,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
         boolean correctAnswer6 = correct6.isChecked();
         if (correctAnswer6) {
             score += 1;
+
         }
         //Write toast message indicating amount of correct answers.
         Toast.makeText(this, getString(R.string.toast_part1) + score +
