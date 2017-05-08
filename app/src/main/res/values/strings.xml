@@ -1,3 +1,6 @@
+<!--The audio clips have been taken from CDs for this project. I.e. this quiz in its current form is
+ not to be used publicly.-->
+
 <resources>
     <string name="app_name">Music Quiz</string>
 
@@ -34,6 +37,7 @@
     <string name="q6op3">Joseph Haydn</string>
     <string name="q6op4">Ottorino Respighi</string>
 
+    <!-- Submission button -->
     <string name="submit">Submit</string>
 
     <!--strings to look for in answers for questions 3 & 4 -->
@@ -47,7 +51,7 @@
     <string name="answer4_jacob">jacob</string>
 
     <!-- toast parts for concatenation -->
-    <string name="toast_part1">You have</string>
-    <string name="taost_part2">correct answers.</string>
+    <string name="toast_part1">You have\u0020</string>
+    <string name="toast_part2">\u0020correct answers.</string>
 
 </resources>

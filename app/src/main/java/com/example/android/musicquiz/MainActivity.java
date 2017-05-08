@@ -128,12 +128,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submit(View view) {
+
         //Determine whether the two correct answers have been checked. (question 1 & 2)
         CheckBox correct1a = (CheckBox) findViewById(R.id.correct1a);
         boolean correctAnswer1a = correct1a.isChecked();
         CheckBox correct1b = (CheckBox) findViewById(R.id.correct1b);
         boolean correctAnswer1b = correct1b.isChecked();
-        if (correctAnswer1a && correctAnswer1b) {
+        CheckBox wrong1a = (CheckBox) findViewById(R.id.wrong1a);
+        boolean wrongAnswer1a = wrong1a.isChecked();
+        CheckBox wrong1b = (CheckBox) findViewById(R.id.wrong1b);
+        boolean wrongAnswer1b = wrong1b.isChecked();
+        if (correctAnswer1a && correctAnswer1b && !wrongAnswer1a && !wrongAnswer1b) {
             score += 1;
         }
 
@@ -141,12 +146,15 @@ public class MainActivity extends AppCompatActivity {
         boolean correctAnswer2a = correct2a.isChecked();
         CheckBox correct2b = (CheckBox) findViewById(R.id.correct2b);
         boolean correctAnswer2b = correct2b.isChecked();
-        if (correctAnswer2a && correctAnswer2b) {
+        CheckBox wrong2a = (CheckBox) findViewById(R.id.wrong2a);
+        boolean wrongAnswer2a = wrong2a.isChecked();
+        CheckBox wrong2b = (CheckBox) findViewById(R.id.wrong2b);
+        boolean wrongAnswer2b = wrong2b.isChecked();
+        if (correctAnswer2a && correctAnswer2b && !wrongAnswer2a && !wrongAnswer2b) {
             score += 1;
         }
 
-        //Determine whether certain words have been provided in the answer (question 3 & 4)
-        //One or more of these keywords should be in the answer provided.
+        //Determine whether one or more of these keywords are used in the answer (question 3 & 4)
         EditText response3 = (EditText) findViewById(R.id.response3);
         String writ3 = response3.getText().toString().toLowerCase();
         if (writ3.contains(getString(R.string.answer3_goethe)) ||
@@ -165,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        //Determine whether correct answer has been selected (question 5 & 6)
+        //Determine whether correct the answer has been selected (question 5 & 6)
         RadioButton correct5 = (RadioButton) findViewById(R.id.correct5);
         boolean correctAnswer5 = correct5.isChecked();
         if (correctAnswer5) {
@@ -179,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //Write toast message indicating amount of correct answers.
         Toast.makeText(this, getString(R.string.toast_part1) + score +
-                getString(R.string.taost_part2), Toast.LENGTH_SHORT).show();
+                getString(R.string.toast_part2), Toast.LENGTH_SHORT).show();
         score = 0;
     }
 

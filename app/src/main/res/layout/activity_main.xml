@@ -33,6 +33,7 @@
             <LinearLayout style="@style/ViewHolder">
 
                 <CheckBox
+                    android:id="@+id/wrong1b"
                     style="@style/Answer"
                     android:text="@string/q1op1" />
 
@@ -47,6 +48,7 @@
                     android:text="@string/q1op3" />
 
                 <CheckBox
+                    android:id="@+id/wrong1a"
                     style="@style/Answer"
                     android:text="@string/q1op4" />
             </LinearLayout>
@@ -75,10 +77,12 @@
                     android:text="@string/q2op1" />
 
                 <CheckBox
+                    android:id="@+id/wrong2a"
                     style="@style/Answer"
                     android:text="@string/q2op2" />
 
                 <CheckBox
+                    android:id="@+id/wrong2b"
                     style="@style/Answer"
                     android:text="@string/q2op3" />
 
