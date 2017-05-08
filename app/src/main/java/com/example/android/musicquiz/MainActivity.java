@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
                     focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK ||
                     focusChange == AudioManager.AUDIOFOCUS_LOSS) {
-                // Ducking or pausing is not favourable, as the clips should be heard clearly and in their entirety.
+                // Ducking or pausing is not favourable, as the clips should be heard clearly and in
+                // their entirety.
                 // Stop playback and clean up resources.
                 releaseMediaPlayer();
             } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
